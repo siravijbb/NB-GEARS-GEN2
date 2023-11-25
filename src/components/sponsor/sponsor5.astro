@@ -1,13 +1,13 @@
 <script>
   const statusPairs = [
     [
-      'Gold Class',
+      'ล่าสุด',
       'ml-1 bg-emerald-400 text-white px-2 pt-1 -mt-1 flex-initial rounded-xl',
     ],
   ]
   const modelPairs = [
     [
-      'Starting team',
+      'Model 2D',
       'mt-1 ml-1 bg-blue-500 text-white px-2 pt-1 flex-initial rounded-xl',
     ],
   ]
@@ -16,8 +16,8 @@
   function StatusSection(props) {
     const statuses = props.statuses || []
 
-    const section = document.createElement('section10')
-    section.className = 'status-section10'
+    const section = document.createElement('section17')
+    section.className = 'status-section17'
 
     statuses.forEach(statusClassPair => {
       const p = document.createElement('p')
@@ -30,14 +30,14 @@
   }
 
   const statusSection = StatusSection({ statuses: statusPairs })
-  document.getElementById('statussponsorsection1').appendChild(statusSection)
+  document.getElementById('statussection17').appendChild(statusSection)
 
   // ModelSection Component
   function ModelSection(props) {
     const models = props.models || []
 
-    const section = document.createElement('section10')
-    section.className = 'model-section10'
+    const section = document.createElement('section17')
+    section.className = 'model-section17'
 
     models.forEach(modelClassPair => {
       const p = document.createElement('p')
@@ -50,33 +50,34 @@
   }
 
   const modelSection = ModelSection({ models: modelPairs })
-  document.getElementById('sponsorsection1').appendChild(modelSection)
+  document.getElementById('modelsection17').appendChild(modelSection)
 </script>
 
 <div>
   <!-- Modal toggle -->
   <div class="mx-auto max-w-xs">
     <button
-      data-modal-target="sponsor1"
-      data-modal-toggle="sponsor1"
+      data-modal-target="sponsor5"
+      data-modal-toggle="sponsor5"
       class="h-full w-full py-2"
       type="button"
+      disabled
     >
       <div
         class="overflow-hidden rounded-lg bg-white shadow-lg hover:bg-neutral-200 hover:shadow-2xl"
         id="punroon"
       >
-        <div class="bg-gray-500">
+        <div class="bg-gray-500 pb-1">
           <img
-            class="mx-auto w-auto p-4 sm:h-24 md:h-56"
-            src="/sponsor/KMUTNB.webp"
+            class="mx-auto h-auto w-full md:h-56"
+            src="/sponsor/TMT.webp"
             alt="avatar"
             height="auto"
             width="auto"
           />
         </div>
         <div class="">
-          <h1 class="text-lg font-bold text-gray-700">KMUTNB</h1>
+          <h1 class="text-lg font-bold text-gray-700">TMT</h1>
           <p class="text-base text-gray-700">Sponsor of NB GEARS</p>
         </div>
       </div>
@@ -85,7 +86,7 @@
 
   <!-- Main modal -->
   <div
-    id="sponsor1"
+    id="sponsor5"
     tabindex="-1"
     aria-hidden="true"
     class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
@@ -98,12 +99,12 @@
           class="flex items-start justify-between rounded-t border-b p-4 dark:border-gray-600"
         >
           <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-            KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK
+            Terms of Service
           </h3>
           <button
             type="button"
             class="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
-            data-modal-hide="sponsor1"
+            data-modal-hide="sponsor5"
           >
             <svg
               class="h-3 w-3"
@@ -125,6 +126,7 @@
         <!-- Modal body -->
         <div class="space-y-6 p-6">
           <article>
+            <h1>Exploring The Star</h1>
             <div class="corosel4">
               <div
                 id="default-carousel"
@@ -136,7 +138,7 @@
                   <!-- Item 1 -->
                   <div class="ease-700 hidden ease-in-out" data-carousel-item>
                     <img
-                      src="/favicon.webp "
+                      src="/model/sponsor5.0.webp"
                       class="absolute left-1/2 top-1/2 block h-32 w-auto -translate-x-1/2 -translate-y-1/2 md:h-96"
                       alt="..."
                     />
@@ -144,11 +146,12 @@
                   <!-- Item 2 -->
                   <div class="ease-700 hidden ease-in-out" data-carousel-item>
                     <img
-                      src="/favicon.webp "
+                      src="/model/sponsor3.1.webp"
                       class="absolute left-1/2 top-1/2 block h-32 w-auto -translate-x-1/2 -translate-y-1/2 md:h-96"
                       alt="..."
                     />
                   </div>
+                  <!-- Item 3 -->
                 </div>
                 <!-- Slider indicators -->
                 <div
@@ -228,11 +231,11 @@
             </div>
             <div class="mt-4 flex">
               <p class="flex-none">
-                Level:<p class="flex-initial" id="statussponsorsection1"></p>
+                สถานะ:<p class="flex-initial" id="statussection17"></p>
               </p>
             </div><div class="flex">
               <p class="mt-2 flex-none flex-none">
-                Since:<p id="sponsorsection1"></p>
+                รูปแบบ:<p id="modelsection17"></p>
               </p><div></div>
             </div>
           </article>
@@ -242,7 +245,7 @@
           class="flex items-center space-x-2 rounded-b border-t border-gray-200 p-6 dark:border-gray-600"
         >
           <button
-            data-modal-hide="sponsor1"
+            data-modal-hide="sponsor5"
             type="button"
             class="rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-500 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-600"
             >ปิด</button
